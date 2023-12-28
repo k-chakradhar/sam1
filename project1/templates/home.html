@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+     <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+
+<form method="post" action="{% url 'delete' %}">
+  {% csrf_token %}
+  <button type="submit">Delete User</button> 
+ </form>
